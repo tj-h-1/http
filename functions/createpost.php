@@ -1,6 +1,8 @@
 <?php
     include("../includes/db.php");
 
+    /* Gets form data, datetime, and user id from a session (not yet working) and inserts to posts table */
+    
     if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $blog_content = $_POST['content'];
 

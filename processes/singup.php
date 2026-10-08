@@ -1,5 +1,5 @@
 <?php // handle sign up requests
-
+    $message = "";
     include('db.php');
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -9,7 +9,7 @@
         $confirmPassword = $_POST['confirm_password'] ?? '';
 
         if ($password !== $confirmPassword) {
-            echo 'Passwords do not match.';
+            $message = 'Passwords do not match.';
         } else {
             $check = $pdo->prepare('SELECT * FROM users WHERE username = :username OR email = :email');
             $check->execute([
@@ -18,7 +18,7 @@
             ]);
 
             if ($check->fetch(PDO::FETCH_ASSOC)) {
-                echo 'That username or email is already taken.';
+                $message='That username or email is already taken.';
             } else {
 
                 $sql = 'INSERT INTO users (username, password, email) VALUES (:username, :password, :email)';
@@ -29,7 +29,9 @@
                     ':email' => $email
                 ]);
 
-                echo 'Account created. You can now log in.';
+                $message = 'Account created. You can now log in.'; ?>
+                <p><?php echo $message; ?></p>
+            <?php
             }
         }
     }
