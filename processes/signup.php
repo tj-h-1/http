@@ -1,6 +1,6 @@
 <?php // handle sign up requests
     $message = "";
-    include('db.php');
+    include('../includes/db.php');
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $username = trim($_POST['username'] ?? '');
