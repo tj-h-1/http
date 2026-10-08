@@ -7,6 +7,7 @@
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $username = trim($_POST['username'] ?? '');
         $password = $_POST['password'] ?? '';
+        $password_hash = password_hash($password, PASSWORD_DEFAULT);
         $email = trim($_POST['email'] ??'');
         $confirmPassword = $_POST['confirm_password'] ?? '';
 
@@ -27,7 +28,7 @@
                 $stmt = $pdo->prepare($sql);
                 $stmt->execute([
                     ':username' => $username,
-                    ':password' => $password,
+                    ':password' => $password_hash,
                     ':email' => $email
                 ]);
 
