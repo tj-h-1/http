@@ -12,6 +12,7 @@
         
         if ($row && $password === $row['password']) {
             echo 'Login successful!';
+            $_SESSION['username'] = $user;
         } else {
             echo 'Incorrect username or password.';
         }
