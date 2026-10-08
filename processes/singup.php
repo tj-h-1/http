@@ -29,7 +29,9 @@
                     ':email' => $email
                 ]);
 
-                $message = 'Account created. You can now log in.';
+                $message = 'Account created. You can now log in.'; ?>
+                <p><?php echo $message; ?></p>
+            <?php
             }
         }
     }
