@@ -35,6 +35,13 @@ colour scheme :
     align-content: center;
 }
 
+input{
+    background-color: rgb(187, 187, 187);
+}
+button[type=submit]{
+    background-color: rgb(187, 187, 187);
+}
+
 .footer{
     align-self: auto;
     position: fixed;
