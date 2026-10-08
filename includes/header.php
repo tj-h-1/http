@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Blog</title>
     
-    <div class="header">Header</div>
+    <div class="header">Secure Blog System</div>
     <a href="login-form.php">
         <button>Login</button>
     </a>
