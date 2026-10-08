@@ -11,6 +11,10 @@
     <title>Blog</title>
     <div class="header">
         <div class="title">Secure Blog System</div>
+        <a href="index.php" class="button">
+            <img src = "assets/images/home.png" onmouseover="homebuttonhover(this);" onmouseout="homebuttonunhover(this);">
+        </a>
+        <div></div>
         <a href="post-creation.php" class="button">
             <img src = "assets/images/add_blog.png" onmouseover="blogbuttonhover(this);" onmouseout="blogbuttonunhover(this);">
         </a>

@@ -16,11 +16,12 @@ colour scheme :
 */
 .header{
     display: grid;
-    grid-template-columns: 1fr 192px 10px 192px 10px 192px 10px;
+    grid-template-columns: 1fr 64px 10px 192px 10px 192px 10px 192px 10px;
     height: 10vh;
     width: 100vw;
     background-color: rgb(221, 221, 221);
     border-bottom: 1px solid rgb(170, 170, 170);
+    min-height: 84px;
 }
 
 .title{
@@ -51,5 +52,18 @@ button[type = submit]{
     left: 0;
     bottom: 0;
     background-color: rgb(221, 221, 221);
-    border-top: 1px solid rgb(170, 170, 170);
+    border-top: 1px solid black;
+}
+
+/* Classes to do with creating a post */
+.post-content{
+    height: 500px;
+    width: 500px;
+    padding: 20px, 50px;
+    font-size: 20px;
+}
+
+.post-submit{
+    padding: 25px;
+    font-size: 20px;
 }

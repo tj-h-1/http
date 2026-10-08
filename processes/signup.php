@@ -1,4 +1,6 @@
 <?php // handle sign up requests
+
+    include('../includes/header.php');
     $message = "";
     include('../includes/db.php');
 
@@ -35,4 +37,6 @@
             }
         }
     }
+
+    include('../includes/footer.php');
 ?>
