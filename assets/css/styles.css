@@ -16,7 +16,7 @@ colour scheme :
 */
 .header{
     display: grid;
-    grid-template-columns: 1fr 192px 10px 192px 10px;
+    grid-template-columns: 1fr 192px 10px 192px 10px 192px 10px;
     height: 10vh;
     width: 100vw;
     background-color: rgb(221, 221, 221);

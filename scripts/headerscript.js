@@ -13,3 +13,11 @@ function registerbuttonhover(element) {
 function registerbuttonunhover(element) {
   element.setAttribute('src', 'assets/images/register_group_button.png');
 }
+
+function blogbuttonhover(element) {
+  element.setAttribute('src', 'assets/images/add_blog_hover.png');
+}
+
+function blogbuttonunhover(element) {
+  element.setAttribute('src', 'assets/images/add_blog.png');
+}
