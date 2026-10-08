@@ -29,18 +29,11 @@ colour scheme :
     align-items: center;
     padding-top: 3vh;
     font-size: 32px;
+    padding-top: 3vh;
 }
 
 .button {
     align-content: center;
-}
-
-input{
-    background-color: rgb(187, 187, 187);
-}
-button[type = submit]{
-    background-color: rgb(187, 187, 187);
-
 }
 
 .footer{
@@ -67,4 +60,5 @@ button[type = submit]{
 .post-submit{
     padding: 25px;
     font-size: 20px;
+    border-top: 1px solid rgb(170, 170, 170);
 }
