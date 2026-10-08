@@ -7,15 +7,20 @@ font-family: Arial, sans-serif;
 }
 body{
     margin: 0;
+    background-color: rgb(204, 204, 204);
 }
+/*
+colour scheme : 
+(170, 170, 170), (187, 187, 187), (204, 204, 204), (221, 221, 221)
+*/
 .header{
     display: grid;
     grid-template-columns: 1fr 4fr 10fr 5fr;
     align-self: auto;
     text-align: center;
     height: 10vh;
-    background-color: bisque;
-    border-bottom: 1px solid black;
+    background-color: rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(170, 170, 170);
 }
 .footer{
     align-self: auto;
@@ -26,6 +31,6 @@ body{
     width: 100%;
     left: 0;
     bottom: 0;
-    background-color: bisque;
+    background-color: rgb(221, 221, 221);
     border-top: 1px solid black;
 }
