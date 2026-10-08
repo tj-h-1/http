@@ -1,4 +1,6 @@
 <?php 
+include('../includes/header.php');
+include('../includes/db.php');
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user = $_POST['username'] ?? '';
@@ -17,4 +19,5 @@
             echo 'Incorrect username or password.';
         }
     }
+    include('../includes/footer.php');
 ?>

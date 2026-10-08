@@ -1,6 +1,8 @@
 <?php // handle sign up requests
+
+    include('../includes/header.php');
     $message = "";
-    include('db.php');
+    include('../includes/db.php');
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $username = trim($_POST['username'] ?? '');
@@ -29,8 +31,12 @@
                     ':email' => $email
                 ]);
 
-                $message = 'Account created. You can now log in.';
+                $message = 'Account created. You can now log in.'; ?>
+                <p><?php echo $message; ?></p>
+            <?php
             }
         }
     }
+
+    include('../includes/footer.php');
 ?>
