@@ -27,7 +27,8 @@ colour scheme :
 .title{
     text-align: center;
     align-items: center;
-    padding-top: 4vh;
+    padding-top: 3vh;
+    font-size: 32px;
 }
 
 .button {
