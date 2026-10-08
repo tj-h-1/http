@@ -11,7 +11,7 @@
     <title>Blog</title>
     <div class="header">
         <div>Secure Blog System</div>
-        <a href="pots-creation.php" class="button">
+        <a href="post-creation.php" class="button">
             <img src = "assets/images/add_blog.png" onmouseover="blogbuttonhover(this);" onmouseout="blogbuttonunhover(this);">
         </a>
         <div></div>
