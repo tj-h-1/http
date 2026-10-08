@@ -34,3 +34,16 @@ colour scheme :
     background-color: rgb(221, 221, 221);
     border-top: 1px solid black;
 }
+
+/* Classes to do with creating a post */
+.post-content{
+    height: 500px;
+    width: 500px;
+    padding: 20px, 50px;
+    font-size: 20px;
+}
+
+.post-submit{
+    padding: 25px;
+    font-size: 20px;
+}
