@@ -21,3 +21,11 @@ function blogbuttonhover(element) {
 function blogbuttonunhover(element) {
   element.setAttribute('src', 'assets/images/add_blog.png');
 }
+
+function homebuttonhover(element) {
+  element.setAttribute('src', 'assets/images/home_hover.png');
+}
+
+function homebuttonunhover(element) {
+  element.setAttribute('src', 'assets/images/home.png');
+}
