@@ -5,23 +5,28 @@
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $username = trim($_POST['username'] ?? '');
         $password = $_POST['password'] ?? '';
+        $email = trim($_POST['email'] ??'');
         $confirmPassword = $_POST['confirm_password'] ?? '';
 
         if ($password !== $confirmPassword) {
             echo 'Passwords do not match.';
         } else {
-            $check = $pdo->prepare('SELECT * FROM users WHERE username = :username');
-            $check->execute([':username' => $username]);
+            $check = $pdo->prepare('SELECT * FROM users WHERE username = :username OR email = :email');
+            $check->execute([
+                ':username' => $username,
+                ':email' => $email
+            ]);
 
             if ($check->fetch(PDO::FETCH_ASSOC)) {
-                echo 'That username is already taken.';
+                echo 'That username or email is already taken.';
             } else {
 
-                $sql = 'INSERT INTO users (username, password) VALUES (:username, :password)';
+                $sql = 'INSERT INTO users (username, password, email) VALUES (:username, :password, :email)';
                 $stmt = $pdo->prepare($sql);
                 $stmt->execute([
                     ':username' => $username,
-                    ':password' => $password
+                    ':password' => $password,
+                    ':email' => $email
                 ]);
 
                 echo 'Account created. You can now log in.';
