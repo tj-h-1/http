@@ -8,13 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Blog</title>
+    <div class="header">
+        <div></div>
+        <a href="login-form.php" class="button">
+            <img src = "assets/images/login_group_button.png">
+        </a>
+        <div></div>
+        <a href="signup-form.php" class="button">
+            <img src = "assets/images/register_group_icon.png">
+        </a>
+    </div>
     
-    <div class="header">Header</div>
-    <a href="login-form.php">
-        <button>Login</button>
-    </a>
-    <a href="signup-form.php">
-        <button>Sign Up</button>
-    </a>
 </head>
 <body>
+    
