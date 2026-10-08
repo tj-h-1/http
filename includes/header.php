@@ -6,5 +6,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Blog</title>
     <div class="header">Header</div>
+    <button action="signup-form.php">Sign Up</button>
+    <button action="login-form.php">Login</button>
 </head>
 <body>
