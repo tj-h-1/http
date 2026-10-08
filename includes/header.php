@@ -1,5 +1,8 @@
 <?php
-    include 'processes/sessions/start_session.php';
+    session_start();
+    if (!isset($_SESSION['username'])) {
+        $_SESSION['username'] = "Guest";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
