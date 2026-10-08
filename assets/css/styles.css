@@ -15,9 +15,7 @@ body{
     text-align: center;
     height: 10vh;
     background-color: bisque;
-    border: 1px solid black;
-    border-bottom: 0px solid black;
-    border-left: 0px solid black;
+    border-bottom: 1px solid black;
 }
 .footer{
     align-self: auto;
@@ -29,5 +27,5 @@ body{
     left: 0;
     bottom: 0;
     background-color: bisque;
-    border: 1px solid black;
+    border-top: 1px solid black;
 }
