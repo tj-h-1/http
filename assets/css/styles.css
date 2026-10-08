@@ -23,6 +23,12 @@ colour scheme :
     border-bottom: 1px solid rgb(170, 170, 170);
 }
 
+.title{
+    text-align: center;
+    align-items: center;
+    padding-top: 3vh;
+}
+
 .button {
     align-content: center;
 }

@@ -10,7 +10,7 @@
     <script type="text/javascript" src="scripts/headerscript.js"></script>
     <title>Blog</title>
     <div class="header">
-        <div>Secure Blog System</div>
+        <div class="title">Secure Blog System</div>
         <a href="login-form.php" class="button">
             <img src = "assets/images/login_group_button.png" onmouseover="loginbuttonhover(this);" onmouseout="loginbuttonunhover(this);">
         </a>
