@@ -55,6 +55,54 @@ button[type=submit]{
     border-top: 1px solid rgb(170, 170, 170);
 }
 
+.sBar {
+    left: 0;
+    top: 12vh;
+    height: 86.5vh;
+    width: 5%;
+    background-color: rgb(204, 204, 204);
+    transition: width 0.3s ease;
+    border-right: 1px solid black;
+}
+
+.sBar:hover {
+    width: 200px;
+}
+
+.sBar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sBar ul li {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.sBar ul li span {
+    display: none;
+}
+
+.sBar:hover ul li span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.sBar ul li:hover {
+    background-color: rgb(170, 170, 170);
+    cursor: pointer;
+}
+.sBar h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sBar:hover h2{
+    display: none;
+}
+
 /* Classes to do with creating a post */
 .post-content{
     height: 500px;
