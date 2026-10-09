@@ -159,6 +159,7 @@ button[type=submit]{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-start: 2;
+    grid-row-start: 1;
     height: 100vh;
 }
 
