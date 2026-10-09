@@ -3,7 +3,7 @@
         include 'includes/nav.php';
 ?>
 
-<div class = "Main-Page">
+<div class = "main_page">
     <?php 
     include 'processes/fetch_posts.php';
 
