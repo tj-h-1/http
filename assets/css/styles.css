@@ -109,8 +109,8 @@ button[type=submit]{
 
 /* Classes to do with creating a post */
 .post-content{
-    height: 500px;
-    width: 750px;
+    height: 400px;
+    width: 600px;
     max-height: none;
     overflow-y: auto;
     resize: vertical;
