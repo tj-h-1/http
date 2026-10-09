@@ -19,4 +19,6 @@
             ':content' => $blog_content,
             ':blog_title' => $blog_title,
         ]);
+        header('Location: ../index.php');
+        exit();
     }
