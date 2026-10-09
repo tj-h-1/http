@@ -118,6 +118,7 @@ button[type=submit]{
     display: none;
 }
 
+/* Classes to do with showing blogs*/
 .main_page {
     flex: 1;
     background-color: rgb(204, 204, 204);
@@ -125,6 +126,27 @@ button[type=submit]{
     overflow-y: auto;
 }
 
+.blog_container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.blog {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    border: 3px solid rgb(170, 170, 170);
+    background-color: rgb(221, 221, 221);
+    border-radius: 15px;
+    height: 250px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+}
+
+.blog-title {
+    border-bottom: 3px solid rgb(170, 170, 170);;
+    text-decoration: none;
+}
 
 /* Classes to do with creating a post */
 .post-form form{
