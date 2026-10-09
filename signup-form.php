@@ -3,7 +3,7 @@
     include 'includes/header.php';
 ?>
 
-<form method="POST" action="processes/signup.php"> // not working for some fuckig reason
+<form method="POST" action="../processes/signup.php"> // not working for some fuckig reason
     <input type="text" name="username" placeholder="Username" required>
     <input type="email" name="email" placeholder="Email" required>
     <input type="password" name="password" placeholder="Password" required>

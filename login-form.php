@@ -9,8 +9,6 @@
     <button type="submit">Login</button>
 </form>
 
-
-
 <?php
     include 'includes/footer.php';
 ?>
