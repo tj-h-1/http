@@ -135,8 +135,10 @@ button[type=submit]{
 
 .post-form-box{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .post-content{

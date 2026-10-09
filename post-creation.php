@@ -7,13 +7,13 @@
 <!-- Currently sends form data to createpost.php to be processed, does not send user back to a page yet -->
 <form method="POST" action="functions/createpost.php">
     <div class="post-form-box">
-        Give your post a title.<br>
-        <input type="text" class="post-title" required>
+        <label for="post-title">Give your post a title.</label>
+        <input type="text" id="post-title" class="post-title" required>
     </div>
 
     <div class="post-form-box">
-        Create your Post!<br>
-        <textarea name="content" cols="40" class="post-content"></textarea><br>
+        <label for="post-content">Create your Post!</label>
+        <textarea name="content" id="post-content" class="post-content"></textarea>
         <input type="submit" name="post-submit" class="post-submit" value="Create!">
     </div>
 </form>
