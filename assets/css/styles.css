@@ -64,14 +64,14 @@ button[type=submit]{
 .container {
     display: flex;
     flex: 1;
-    height: 86.5vh;
+    height: 84.5vh;
     overflow: hidden;
 }
 
 .sBar {
     left: 0;
     top: 12vh;
-    height: 86.5vh;
+    height: 84.5vh;
     width: 5vw;
     background-color: rgb(204, 204, 204);
     transition: width 0.3s ease;
