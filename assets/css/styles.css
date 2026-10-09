@@ -156,6 +156,6 @@ button[type=submit]{
 }
 
 .form {
-    margin: 0 auto; 
+    margin: 0 45%; 
     max-width: 300px; 
 }
