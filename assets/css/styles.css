@@ -9,6 +9,8 @@ body{
     margin: 0;
     background-color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    max-width: 100vw;
 }
 /*c
 colour scheme : 
@@ -120,6 +122,18 @@ button[type=submit]{
 }
 
 /* Classes to do with creating a post */
+.post-form{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    row-gap: 15px;
+}
+
+.post-form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .post-content{
     height: 400px;
     width: 600px;

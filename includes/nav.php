@@ -1,4 +1,4 @@
-    <div class="sBar">
+<div class="sBar">
         <ul>
         <li><span>Link 1</span></li>
         <li><span>Link 2</span></li>
