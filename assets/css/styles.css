@@ -61,15 +61,22 @@ button[type=submit]{
     border-top: 1px solid rgb(170, 170, 170);
 }
 
+.container {
+    display: flex;
+    flex: 1;
+    height: 86.5vh;
+    overflow: hidden;
+}
+
 .sBar {
     left: 0;
     top: 12vh;
     height: 86.5vh;
-    width: 5%;
+    width: 5vw;
     background-color: rgb(204, 204, 204);
     transition: width 0.3s ease;
     border-right: 1px solid rgb(170, 170, 170);
-    z-index: 1;
+    flex-shrink: 0;
 }
 
 .sBar:hover {
@@ -111,15 +118,13 @@ button[type=submit]{
     display: none;
 }
 
-.main_page{
-    position: fixed;
-    top: 12vh;
-    left: 5%;
+.main_page {
+    flex: 1;
     background-color: rgb(204, 204, 204);
-    height: 85vh;
-    width: 100vw;
-    z-index: -1;
+    padding: 20px;
+    overflow-y: auto;
 }
+
 
 /* Classes to do with creating a post */
 .post-form{

@@ -1,8 +1,8 @@
 <?php
         include 'includes/header.php';
-        include 'includes/nav.php';
 ?>
-
+<div class="container">
+        <?php include 'includes/nav.php'; ?>
 <div class = "main_page">
     <?php 
     include 'processes/fetch_posts.php';
@@ -15,7 +15,7 @@
         }
     ?>
 </div>
-
+</div>
 <?php
     include 'includes/footer.php';
 ?>
