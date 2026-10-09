@@ -154,8 +154,3 @@ button[type=submit]{
     font-size: 20px;
     border-top: 1px solid rgb(170, 170, 170);
 }
-
-.form {
-    margin: 0 45%; 
-    max-width: 300px; 
-}
