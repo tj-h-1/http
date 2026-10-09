@@ -3,12 +3,15 @@
 
         include 'processes/fetch_posts.php';
 
-        $posts = FetchArray();
-        for ($post = 0; $post < count($posts); $post++) {
-            $title = $posts[$post]['blog_title'];
-            $title = preg_replace('/\s+/', '', $title);
-            echo '<div><a href=post.php?blogname="' . $title . '">'. $posts[$post]['blog_title'] . '</a></div>';
+        if (isset($_GET['blogname'])) {
+        $blogname = $_GET['blogname'];
         }
+
+        $blogname = str_replace('_', ' ', $blogname);
+        $post_data = FetchPost($blogname);
+
+        echo '<div>' . $post_data['blog_title'] . '</div>
+        <div>' . $post_data['content'] . '</div>';
 ?>
 
 <?php
