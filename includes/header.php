@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <script type="text/javascript" src="scripts/headerscript.js"></script>
     <title>Blog</title>
+</head>
+<body>
     <div class="header">
         <div class="title">Secure Blog System</div>
         <a href="index.php" class="button">
@@ -30,7 +32,4 @@
             <img src = "assets/images/register_group_button.png" onmouseover="registerbuttonhover(this);" onmouseout="registerbuttonunhover(this);">
         </a>
     </div>
-    
-</head>
-<body>
     
