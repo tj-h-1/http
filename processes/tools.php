@@ -20,4 +20,11 @@ function Title($title)
 
     return $newtitle;
     }
+
+function LimitCharacters($text, $char_limit, $pad = '...') {
+    if (mb_strlen($text) > $char_limit) {
+        return mb_substr($text, 0, $char_limit) . $pad;
+    }
+    return $text;
+}
 ?>

@@ -138,19 +138,26 @@ button[type=submit]{
 
 .blog {
     display: grid;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 2fr 8fr;
     border: 3px solid rgb(170, 170, 170);
     background-color: rgb(221, 221, 221);
     border-radius: 15px;
     height: 250px;
-    text-align: center;
     margin: 5px;
     color: black;
 }
 
 .blog-title {
-    border-bottom: 3px solid rgb(170, 170, 170);;
+    border-bottom: 3px solid rgb(170, 170, 170);
+    align-content: center;
+    text-align: center;
     text-decoration: none;
+    min-height: fit-content;
+}
+
+.blog-snippet {
+    align-content: center;
+    text-align: center;
 }
 
 /* Classes to do with creating a post */
