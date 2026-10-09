@@ -150,10 +150,10 @@ button[type=submit]{
     border-top: 1px solid rgb(170, 170, 170);
 }
 
-.form-container{
+.form-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
 }
