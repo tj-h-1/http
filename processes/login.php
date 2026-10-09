@@ -16,6 +16,10 @@ include('../includes/db.php');
         if ($row && password_verify($password, $row['password'])) {
             echo 'Login successful!';
             $_SESSION['username'] = $user;
+            $_SESSION['user_id'] = $row['id'];
+
+            header('Location: ../index.php');
+            exit();
         } else {
             echo 'Incorrect username or password.';
         }
