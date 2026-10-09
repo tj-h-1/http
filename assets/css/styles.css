@@ -18,7 +18,7 @@ colour scheme :
 */
 .header{
     display: grid;
-    grid-template-columns: 1fr 64px 10px 192px 10px 192px 10px 192px 10px;
+    grid-template-columns: 1fr 6fr 64px 10px 192px 10px 192px 10px 192px 10px;
     height: 10vh;
     width: 100vw;
     background-color: rgb(221, 221, 221);
@@ -35,6 +35,11 @@ colour scheme :
     text-decoration:underline;
     color: rgb(100, 100, 100);
     text-shadow: 2px 2px 0px black;
+}
+
+.logo{
+    align-items: center;
+    border-right: 2px solid rgb(170, 170, 170);
 }
 
 .button {

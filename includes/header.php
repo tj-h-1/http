@@ -15,6 +15,7 @@
 </head>
 <body>
     <div class="header">
+        <div class="logo"><img src="assets/images/logo.png" height=80></div>
         <div class="title">Secure Blog System</div>
         <a href="index.php" class="button">
             <img src = "assets/images/home.png" onmouseover="homebuttonhover(this);" onmouseout="homebuttonunhover(this);">
