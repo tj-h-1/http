@@ -6,7 +6,7 @@
 <!-- Currently sends form data to createpost.php to be processed, does not send user back to a page yet -->
 <form method="POST" action="functions/createpost.php">
     Create your Post!<br>
-    <input type="text" name="content" class="post-content"><br>
+    <textarea name="content" rows="15" cols="40" class="post-content"><br>
     <input type="submit" name="post-submit" class="post-submit" value="Create!">
 </form>
 
