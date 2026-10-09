@@ -151,9 +151,8 @@ button[type=submit]{
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     height: 100vh;
 }
+
