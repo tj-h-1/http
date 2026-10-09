@@ -5,6 +5,7 @@ include('../includes/db.php');
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user = $_POST['username'] ?? '';
         $password = $_POST['password'] ?? '';
+        $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
         $sql = 'SELECT * FROM users WHERE username = :username';
 
@@ -12,7 +13,7 @@ include('../includes/db.php');
         $stmt->execute([':username' => $user]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         
-        if ($row && $password === $row['password']) {
+        if ($row && password_verify($password, $row['password'])) {
             echo 'Login successful!';
             $_SESSION['username'] = $user;
         } else {
