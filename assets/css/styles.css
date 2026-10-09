@@ -7,7 +7,7 @@ font-family: Arial, sans-serif;
 }
 body{
     margin: 0;
-    background-color: rgb(204, 204, 204);
+    background-color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*c
@@ -67,10 +67,12 @@ button[type=submit]{
     background-color: rgb(204, 204, 204);
     transition: width 0.3s ease;
     border-right: 1px solid rgb(170, 170, 170);
+    z-index: 1;
 }
 
 .sBar:hover {
     width: 200px;
+    z-index: 1;
 }
 
 .sBar ul {
@@ -105,6 +107,16 @@ button[type=submit]{
 }
 .sBar:hover h2{
     display: none;
+}
+
+.main_page{
+    position: fixed;
+    top: 12vh;
+    left: 5%;
+    background-color: rgb(204, 204, 204);
+    height: 85vh;
+    width: 100vw;
+    z-index: -1;
 }
 
 /* Classes to do with creating a post */
