@@ -11,7 +11,7 @@
         for ($post = 0; $post < count($posts); $post++) {
             $title = $posts[$post]['blog_title'];
             $title = preg_replace('/\s+/', '_', $title);
-            echo '<div><a href=post.php?blogname="' . $title . '">'. $posts[$post]['blog_title'] . '</a></div>';
+            echo '<div><a href=post.php?blogname=' . $title . '>'. $posts[$post]['blog_title'] . '</a></div>';
         }
     ?>
 </div>

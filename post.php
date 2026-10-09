@@ -8,6 +8,7 @@
         }
 
         $blogname = str_replace('_', ' ', $blogname);
+
         $post_data = FetchPost($blogname);
 
         echo '<div>' . $post_data['blog_title'] . '</div>
