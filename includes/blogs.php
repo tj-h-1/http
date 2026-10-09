@@ -11,7 +11,7 @@
             echo '<a href=post.php?blogname=' . $title . '>
             <div class = "blog">
             <div class = "blog-title">'. Title($posts[$post]['blog_title']) . '</div>
-            <div class = "blog_snippet">' .
+            <div class = "blog-snippet">' . LimitCharacters($posts[$post]['content'], 200) .
             '</div>
             </div></a>';
         }

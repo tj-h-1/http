@@ -1,6 +1,10 @@
 <?php
         include 'includes/header.php';
 
+        include 'includes/nav.php';
+?>
+<div class="main_content">
+<?php
         include 'processes/fetch_posts.php';
 
         if (isset($_GET['blogname'])) {
@@ -14,7 +18,7 @@
         echo '<div>' . $post_data['blog_title'] . '</div>
         <div>' . $post_data['content'] . '</div>';
 ?>
-
+<div>
 <?php
     include 'includes/footer.php';
 ?>
